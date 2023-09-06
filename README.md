@@ -1,5 +1,13 @@
 ### Hi there 👋
 
+- 🔭 I’m currently working on a chatbot to communicate with a dataset published by the city of San Francisco
+- 🌱 I’m currently learning React
+- 👯 I’m looking to collaborate to develope this app to the next stage!
+- 💬 Ask me about data visualization, d3.js, getting published in literary journals or riding your bicycle in San Francisco!
+- 📫 How to reach me: ninamirf@gmail 
+- 😄 Pronouns: they/them/theirs
+
+
 <!--
 **nina-mir/nina-mir** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
