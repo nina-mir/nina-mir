@@ -6,7 +6,7 @@ I love developing web applications and data visualizations to help people with s
 
 ![#c5f015](https://via.placeholder.com/15/c5f015/000000?text=+) My master's project got a 2nd rank in the research competition by SF State University in May 2023. It is now accepted as a poster for the IEEE VIS 2023 conference in Australia! :partying_face:
 
-- :bulb:	I am currently looking for a software development, data, backend, frontened role in SF Bay Area or Germany!
+- :bulb:	**I am currently looking for a software development, data, backend, frontened role in SF Bay Area or Germany!**
 - 🔭 I’m currently working on a chatbot to communicate with a dataset published by the city of San Francisco
 - 🌱 I’m currently learning React
 - 👯 I’m looking to collaborate to develope this app to the next stage!
