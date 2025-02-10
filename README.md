@@ -1,10 +1,10 @@
 ### Hallo! 👋
   
-![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) My name is Nina. :rainbow: :transgender_flag:	:bike:	 
+My name is Nina. :rainbow: :transgender_flag:	:bike:	 
 I am a web developer with experience in frontend and data analysis/visualization. 
-![#1589F0](https://via.placeholder.com/15/1589F0/000000?text=+) I am also a literary writer. My published works are listed ➡️ [here!](https://nina-mir.github.io/words/)
+I am also a literary writer. My published works are listed ➡️ [here!](https://nina-mir.github.io/words/)
 
-![#c5f015](https://via.placeholder.com/15/c5f015/000000?text=+) ```My master's project got a 2nd rank in the research competition by SF State University in May 2023. It is now accepted as a poster for the IEEE VIS 2023 conference in Australia!``` :partying_face:
+```My master's project got a 2nd rank in the research competition by SF State University in May 2023. It is now accepted as a poster for the IEEE VIS 2023 conference in Australia!``` :partying_face:
 
 - :bulb:	**I am currently looking for a software development, data, backend, frontened role in SF Bay Area 🌉 or 🇩🇪 !**
 - 🔭 I’m currently working on a chatbot to communicate with a dataset published by the city of San Francisco
