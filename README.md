@@ -7,12 +7,7 @@ I am also a literary writer. My published works are listed ➡️ [here!](https:
 ```My master's project got a 2nd rank in the research competition by SF State University in May 2023. It is now accepted as a poster for the IEEE VIS 2023 conference in Australia!``` :partying_face:
 
 - :bulb:	**I am currently looking for a software development, data, backend, frontened role in SF Bay Area 🌉 or 🇩🇪 !**
-- 🔭 I’m currently working on a chatbot to communicate with a dataset published by the city of San Francisco
-- 🌱 I’m currently learning React
-- 👯 I’m looking to collaborate to develope this app to the next stage!
-- 💬 Ask me about data visualization, d3.js, getting published in literary journals or riding your bicycle in San Francisco!
-- 📫 How to reach me: ninamirf@gmail 
-- 😄 Pronouns: they/them/theirs
+
 
 </div>
 <!--
