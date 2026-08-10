@@ -1,3 +1,24 @@
+## [August 2026]
+ 
+#### Started contributing upstream to open source — three PRs so far, in three different ecosystems
+ 
+**[mdn/browser-compat-data #30171](https://github.com/mdn/browser-compat-data/pull/30171) — ✅ merged**
+Corrected Firefox compat data for `FontFaceSet.values()/.keys()/.entries()`: tested 11 iteration behaviors across Firefox 153 and Chrome 151 to establish which three subfeatures are broken and which work correctly — a distinction the original report didn't make.
+`compat-data` `cross-browser testing` `JSON schema` `MDN`
+ 
+**[python-visualization/folium #2263](https://github.com/python-visualization/folium/pull/2263) — 🔄 in review**
+Root-caused and fixed [issue #1520](https://github.com/python-visualization/folium/issues/1520) (open since 2021): GeoJSON tooltips/popups came up empty on multi-geometry features because `feature` never reached the child layers Leaflet wraps in a `FeatureGroup` — fix verified against all eight geometry types plus nested `GeometryCollection`s, with a Selenium regression test.
+`Python` `Leaflet/JS` `Jinja2` `pytest` `Selenium`
+ 
+**[jupyterlab/jupyterlab #19257](https://github.com/jupyterlab/jupyterlab/pull/19257) — 🔄 open**
+Fixes the low-contrast variable names in the Debugger Variables panel by swapping a hard-coded color for an existing `--jp-` theme token, so the text stays readable in both light and dark themes.
+`accessibility` `WCAG contrast` `TypeScript` `CSS`
+ 
+#### also this month
+ 
+- filed [adobe/react-spectrum #10411](https://github.com/adobe/react-spectrum/issues/10411) with a live reproduction — the S2 docs playground was emitting Tooltip code samples that didn't typecheck; a maintainer shipped the fix the next day
+- posted browser-tested findings on [react-spectrum #8027](https://github.com/adobe/react-spectrum/issues/8027) and [mdn/content #45005](https://github.com/mdn/content/pull/45005), including the negative results
+<hr>
 ## [July 2026]
 
 #### Built & published **Save Image 'n Context** — a Manifest V3 Chrome extension for researchers: right-click any web image to download it *and* log a local citation record of its source (page URL/title, canonical URL, Open Graph metadata, alt text, figure caption, plus the nearest heading/paragraph/link via deterministic DOM heuristics)
