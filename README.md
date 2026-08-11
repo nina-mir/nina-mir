@@ -6,7 +6,7 @@
 
 ## <img align="top" width="24" src="https://api.iconify.design/lucide/calendar-days.svg?color=%238957e5" /> &nbsp;August 2026
 
-<img src="assets/section-open-source.png" alt="Open-source contributions" width="560" />
+<img src="assets/section-open-source.png" alt="Open-source contributions" width="100%" />
 
 **`mdn/browser-compat-data`** &nbsp;[#30171](https://github.com/mdn/browser-compat-data/pull/30171) &nbsp;![merged](https://img.shields.io/badge/merged-8250df?style=flat-square)
 
