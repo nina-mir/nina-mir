@@ -1,10 +1,14 @@
-<h3 align="left">📌 Currently: contributing upstream to open source — 3 PRs across 3 ecosystems this month</h3>
+<!-- Icons: Lucide via Iconify (accent #8957e5) · banners: assets/*.png · renders on GitHub -->
 
-## 🗓️ August 2026
+<p align="center">
+  <img src="assets/header.png" alt="Nina Mir — software engineer // web / data" width="100%" />
+</p>
 
-### 🔀 Open-source contributions
+## <img align="top" width="24" src="https://api.iconify.design/lucide/calendar-days.svg?color=%238957e5" /> &nbsp;August 2026
 
-**[`mdn/browser-compat-data` #30171](https://github.com/mdn/browser-compat-data/pull/30171)** &nbsp;![merged](https://img.shields.io/badge/merged-8250df?style=flat-square)
+<img src="assets/section-open-source.png" alt="Open-source contributions" width="560" />
+
+**`mdn/browser-compat-data`** &nbsp;[#30171](https://github.com/mdn/browser-compat-data/pull/30171) &nbsp;![merged](https://img.shields.io/badge/merged-8250df?style=flat-square)
 
 Corrected Firefox compat data for `FontFaceSet.values() / .keys() / .entries()`. Tested 11 iteration behaviors across Firefox 153 and Chrome 151 to establish which three subfeatures are broken and which work correctly — a distinction the original report never made.
 
@@ -12,7 +16,7 @@ Corrected Firefox compat data for `FontFaceSet.values() / .keys() / .entries()`.
 
 <br>
 
-**[`python-visualization/folium` #2263](https://github.com/python-visualization/folium/pull/2263)** &nbsp;![in review](https://img.shields.io/badge/in_review-bf8700?style=flat-square)
+**`python-visualization/folium`** &nbsp;[#2263](https://github.com/python-visualization/folium/pull/2263) &nbsp;![in review](https://img.shields.io/badge/in_review-bf8700?style=flat-square)
 
 Root-caused and fixed [issue #1520](https://github.com/python-visualization/folium/issues/1520) (open since 2021): GeoJSON tooltips/popups came up empty on multi-geometry features because `feature` never reached the child layers Leaflet wraps in a `FeatureGroup`. Fix verified against all eight geometry types plus nested `GeometryCollection`s, with a Selenium regression test.
 
@@ -20,7 +24,7 @@ Root-caused and fixed [issue #1520](https://github.com/python-visualization/foli
 
 <br>
 
-**[`jupyterlab/jupyterlab` #19257](https://github.com/jupyterlab/jupyterlab/pull/19257)** &nbsp;![open](https://img.shields.io/badge/open-1a7f37?style=flat-square)
+**`jupyterlab/jupyterlab`** &nbsp;[#19257](https://github.com/jupyterlab/jupyterlab/pull/19257) &nbsp;![open](https://img.shields.io/badge/open-1a7f37?style=flat-square)
 
 Fixed the low-contrast variable names in the Debugger Variables panel by swapping a hard-coded color for an existing `--jp-` theme token, so the text stays readable in both light and dark themes.
 
@@ -37,9 +41,9 @@ Fixed the low-contrast variable names in the Debugger Variables panel by swappin
 
 ---
 
-## 🗓️ July 2026
+## <img align="top" width="24" src="https://api.iconify.design/lucide/calendar-days.svg?color=%238957e5" /> &nbsp;July 2026
 
-### 🧩 Save Image 'n Context — Manifest V3 Chrome extension
+### <img align="top" width="20" src="https://api.iconify.design/lucide/puzzle.svg?color=%238957e5" /> &nbsp;Save Image 'n Context — Manifest V3 Chrome extension
 
 A research tool: right-click any web image to download it **and** log a local citation record of its source — page URL/title, canonical URL, Open Graph metadata, alt text, figure caption, plus the nearest heading/paragraph/link via deterministic DOM heuristics.
 
@@ -49,17 +53,17 @@ A research tool: right-click any web image to download it **and** log a local ci
 
 ![Chrome Extension](https://img.shields.io/badge/Chrome_Extension-4285F4?style=flat-square&logo=googlechrome&logoColor=white) ![Manifest V3](https://img.shields.io/badge/Manifest_V3-4285F4?style=flat-square) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
 
-[![Chrome Web Store](https://img.shields.io/badge/Get_it_on_the_Chrome_Web_Store-4285F4?style=for-the-badge&logo=googlechrome&logoColor=white)](https://chromewebstore.google.com/detail/save-image-n-context/ikfnmdlkdmmjfoinfgmkccloejgmhmil) &nbsp; [![Source](https://img.shields.io/badge/Source-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/nina-mir/save-image-n-context)
+[![Get it on the Chrome Web Store](https://img.shields.io/badge/Get_it_on_the_Chrome_Web_Store-4285F4?style=for-the-badge&logo=googlechrome&logoColor=white)](https://chromewebstore.google.com/detail/save-image-n-context/ikfnmdlkdmmjfoinfgmkccloejgmhmil) &nbsp; [![Source](https://img.shields.io/badge/Source-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/nina-mir/save-image-n-context)
 
 ---
 
 <details>
-<summary><h2>🗓️ June 2026 — Snarp Profanity Index</h2></summary>
+<summary><h2><img align="top" width="22" src="https://api.iconify.design/lucide/calendar-days.svg?color=%238957e5" /> &nbsp;June 2026 — Snarp Profanity Index</h2></summary>
 <br>
 
-### 📊 Snarp Profanity Index — interactive dashboard
+### <img align="top" width="20" src="https://api.iconify.design/lucide/chart-column.svg?color=%238957e5" /> &nbsp;Snarp Profanity Index — interactive dashboard
 
-Visualizes how often different categories of profanity appear across 52 college-sports YouTube videos by a popular creator — to find out which collegiate rivalries are the most controversial *linguistically* 😄
+Visualizes how often different categories of profanity appear across 52 college-sports YouTube videos by a popular creator — to find out which collegiate rivalries are the most controversial *linguistically*.
 
 - **The workflow** — scrape audio via the YouTube API ➜ transcribe with the Whisper neural network on Hugging Face ➜ analyze transcripts to categorize terms.
 - **Interactive** — charts built with SVG & D3.js, plus full-text search across all transcripts.
@@ -71,10 +75,10 @@ Visualizes how often different categories of profanity appear across 52 college-
 </details>
 
 <details>
-<summary><h2>🗓️ Spring 2026 — Kopani</h2></summary>
+<summary><h2><img align="top" width="22" src="https://api.iconify.design/lucide/calendar-days.svg?color=%238957e5" /> &nbsp;Spring 2026 — Kopani</h2></summary>
 <br>
 
-### 📚 Kopani — discovery infrastructure for independent literature
+### <img align="top" width="20" src="https://api.iconify.design/lucide/library-big.svg?color=%238957e5" /> &nbsp;Kopani — discovery infrastructure for independent literature
 
 An MVP platform that indexes literary and art pieces published by independent journals *without republishing copyrighted material*.
 
@@ -83,17 +87,18 @@ An MVP platform that indexes literary and art pieces published by independent jo
 
 ![Astro](https://img.shields.io/badge/Astro-BC52EE?style=flat-square&logo=astro&logoColor=white) ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white) ![SQLite](https://img.shields.io/badge/SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white) ![Netlify](https://img.shields.io/badge/Netlify-00C7B7?style=flat-square&logo=netlify&logoColor=white)
 
-> 🏆 Presented at the Perplexity AI *Billion Dollar Pitch* competition.
+> [!TIP]
+> Presented at the Perplexity AI *Billion Dollar Pitch* competition.
 
 [![Live demo](https://img.shields.io/badge/Live_demo-2ea44f?style=for-the-badge)](https://kopani.netlify.app/)
 
 </details>
 
 <details>
-<summary><h2>🗓️ October 2025 — SF Film Locations RAG</h2></summary>
+<summary><h2><img align="top" width="22" src="https://api.iconify.design/lucide/calendar-days.svg?color=%238957e5" /> &nbsp;October 2025 — SF Film Locations RAG</h2></summary>
 <br>
 
-### 🎬 NLP-to-GeoPandas RAG pipeline
+### <img align="top" width="20" src="https://api.iconify.design/lucide/clapperboard.svg?color=%238957e5" /> &nbsp;NLP-to-GeoPandas RAG pipeline
 
 A full-stack RAG pipeline to chat with the [Film Locations in San Francisco dataset](https://data.sfgov.org/Culture-and-Recreation/Film-Locations-in-San-Francisco/yitu-d5am/about_data). Completed during a DigitalOcean / Auth0 hackathon in San Francisco on Oct 18, 2025.
 
@@ -104,10 +109,10 @@ A full-stack RAG pipeline to chat with the [Film Locations in San Francisco data
 </details>
 
 <details>
-<summary><h2>🗓️ 2025 — WindBorne constellation data pipeline</h2></summary>
+<summary><h2><img align="top" width="22" src="https://api.iconify.design/lucide/calendar-days.svg?color=%238957e5" /> &nbsp;2025 — WindBorne constellation data pipeline</h2></summary>
 <br>
 
-### 🎈 Live constellation visualizations
+### <img align="top" width="20" src="https://api.iconify.design/lucide/radio-tower.svg?color=%238957e5" /> &nbsp;Live constellation visualizations
 
 A full-stack project ingesting data from WindBorne Systems' live constellation API, feeding two D3.js plots:
 
@@ -123,10 +128,10 @@ The project runs an automated pipeline that fetches and processes new data hourl
 </details>
 
 <details>
-<summary><h2>🗓️ Summer 2025 — Taschen-Dolmetcher.Revisited</h2></summary>
+<summary><h2><img align="top" width="22" src="https://api.iconify.design/lucide/calendar-days.svg?color=%238957e5" /> &nbsp;Summer 2025 — Taschen-Dolmetcher.Revisited</h2></summary>
 <br>
 
-### 🕹️ Multilingual language-learning web game
+### <img align="top" width="20" src="https://api.iconify.design/lucide/gamepad-2.svg?color=%238957e5" /> &nbsp;Multilingual language-learning web game
 
 A web game for people learning Russian / English / German. Inspired by real events on the Eastern Front from 1941–1945, it educates users about Holocaust history through historical materials and witnesses' artworks.
 
@@ -134,15 +139,16 @@ A web game for people learning Russian / English / German. Inspired by real even
 
 [![Play it](https://img.shields.io/badge/Play_it-2ea44f?style=for-the-badge)](https://nina-mir.github.io/taschen-dolmetcher/)
 
-> 💬 Suggestions welcome — [open an issue](https://github.com/nina-mir/taschen-dolmetcher) or email **[nina@sfsu.edu](mailto:nina@sfsu.edu)**.
+> [!NOTE]
+> Suggestions welcome — [open an issue](https://github.com/nina-mir/taschen-dolmetcher) or email **[nina@sfsu.edu](mailto:nina@sfsu.edu)**.
 
 </details>
 
 <details>
-<summary><h2>🗓️ Spring 2025 — The Hell of Treblinka</h2></summary>
+<summary><h2><img align="top" width="22" src="https://api.iconify.design/lucide/calendar-days.svg?color=%238957e5" /> &nbsp;Spring 2025 — The Hell of Treblinka</h2></summary>
 <br>
 
-### 📖 Modern responsive typesetting
+### <img align="top" width="20" src="https://api.iconify.design/lucide/book-open-text.svg?color=%238957e5" /> &nbsp;Modern responsive typesetting
 
 Typeset an important essay by Vasily Grossman — *"The Hell of Treblinka"* — so readers could have a modern, responsive reading experience.
 
