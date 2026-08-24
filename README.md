@@ -16,7 +16,7 @@ Corrected Firefox compat data for `FontFaceSet.values() / .keys() / .entries()`.
 
 <br>
 
-**`python-visualization/folium`** &nbsp;[#2263](https://github.com/python-visualization/folium/pull/2263) &nbsp;![in review](https://img.shields.io/badge/in_review-bf8700?style=flat-square)
+**`python-visualization/folium`** &nbsp;[#2263](https://github.com/python-visualization/folium/pull/2263) &nbsp;![merged](https://img.shields.io/badge/merged-8250df?style=flat-square)
 
 Root-caused and fixed [issue #1520](https://github.com/python-visualization/folium/issues/1520) (open since 2021): GeoJSON tooltips/popups came up empty on multi-geometry features because `feature` never reached the child layers Leaflet wraps in a `FeatureGroup`. Fix verified against all eight geometry types plus nested `GeometryCollection`s, with a Selenium regression test.
 
