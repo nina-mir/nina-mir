@@ -8,53 +8,14 @@
 
 <img src="assets/section-open-source.png" alt="Open-source contributions" width="100%" />
 
-**`mdn/browser-compat-data`** &nbsp;[#30171](https://github.com/mdn/browser-compat-data/pull/30171) &nbsp;![merged](https://img.shields.io/badge/merged-8250df?style=flat-square)
-
-Corrected Firefox compat data for `FontFaceSet.values() / .keys() / .entries()`. Tested 11 iteration behaviors across Firefox 153 and Chrome 151 to establish which three subfeatures are broken and which work correctly — a distinction the original report never made.
-
-![compat-data](https://img.shields.io/badge/compat--data-informational?style=flat-square) ![cross-browser testing](https://img.shields.io/badge/cross--browser_testing-informational?style=flat-square) ![JSON Schema](https://img.shields.io/badge/JSON_Schema-000000?style=flat-square&logo=json&logoColor=white) ![MDN](https://img.shields.io/badge/MDN-000000?style=flat-square&logo=mdnwebdocs&logoColor=white)
-
-<br>
-
-**`python-visualization/folium`** &nbsp;[#2263](https://github.com/python-visualization/folium/pull/2263) &nbsp;![merged](https://img.shields.io/badge/merged-8250df?style=flat-square)
-
-Root-caused and fixed [issue #1520](https://github.com/python-visualization/folium/issues/1520) (open since 2021): GeoJSON tooltips/popups came up empty on multi-geometry features because `feature` never reached the child layers Leaflet wraps in a `FeatureGroup`. Fix verified against all eight geometry types plus nested `GeometryCollection`s, with a Selenium regression test.
-
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![Leaflet](https://img.shields.io/badge/Leaflet%2FJS-199900?style=flat-square&logo=leaflet&logoColor=white) ![Jinja2](https://img.shields.io/badge/Jinja2-B41717?style=flat-square&logo=jinja&logoColor=white) ![pytest](https://img.shields.io/badge/pytest-0A9EDC?style=flat-square&logo=pytest&logoColor=white) ![Selenium](https://img.shields.io/badge/Selenium-43B02A?style=flat-square&logo=selenium&logoColor=white)
-
-<br>
-
-**`traceroot-ai/traceroot`** &nbsp;[#1968](https://github.com/traceroot-ai/traceroot/pull/1968) &nbsp;![in review](https://img.shields.io/badge/in_review-1a7f37?style=flat-square)
-
-Rewrote the Vercel AI integration docs for AI SDK v7, fixing [issue #1966](https://github.com/traceroot-ai/traceroot/issues/1966), which I filed. The page documented `experimental_telemetry`, which on `ai` 7.x emits nothing — silently, with no error. Running the page's own example unmodified produced 1 span; changing only the telemetry line to `@ai-sdk/otel` produced 5, including the `chat` LLM span and the `execute_tool` span the page's own "What Gets Captured" table promises.
-
-![OpenTelemetry](https://img.shields.io/badge/OpenTelemetry-000000?style=flat-square&logo=opentelemetry&logoColor=white) ![Vercel AI SDK](https://img.shields.io/badge/Vercel_AI_SDK-000000?style=flat-square&logo=vercel&logoColor=white) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) ![docs](https://img.shields.io/badge/docs-informational?style=flat-square)
-
-
-<br>
-
-**`jupyterlab/jupyterlab`** &nbsp;[#19257](https://github.com/jupyterlab/jupyterlab/pull/19257) &nbsp;![in review](https://img.shields.io/badge/in_review-1a7f37?style=flat-square) &nbsp;![milestone 4.6.x](https://img.shields.io/badge/milestone_4.6.x-informational?style=flat-square)
-
-Fixed the low-contrast variable names in the Debugger Variables panel, open since 2023. A CodeMirror syntax token was styling UI chrome text at 2.43:1 — below even the 3:1 large-text floor of WCAG SC 1.4.3. Swapping it for an existing `--jp-` theme token brings it to 8.49:1, and tracing the background to a `.positioning-region` element inside the `jp-tree-item` shadow root explained why Dark High Contrast never helped.
-
-![accessibility](https://img.shields.io/badge/accessibility-informational?style=flat-square) ![WCAG contrast](https://img.shields.io/badge/WCAG_contrast-informational?style=flat-square) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) ![CSS](https://img.shields.io/badge/CSS-1572B6?style=flat-square&logo=css3&logoColor=white)
-
-<br>
-
-**`jupyterlab/jupyterlab`** &nbsp;[#19303](https://github.com/jupyterlab/jupyterlab/pull/19303) &nbsp;![in review](https://img.shields.io/badge/in_review-1a7f37?style=flat-square)
-
-Fixed Alt+W not closing the current tab when focus sat outside the main area — open since 2018 with zero comments. The `application:close` keybinding was scoped to `.jp-Activity`, so it never fired unless focus was in a main-area widget, while File ▸ Close Tab worked from anywhere. A one-line selector change, plus a repro widened past the original report and five scenarios verified against `main` to show the modal and terminal behaviors are pre-existing.
-
-![keybindings](https://img.shields.io/badge/keybindings-informational?style=flat-square) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) ![JSON Schema](https://img.shields.io/badge/JSON_Schema-000000?style=flat-square&logo=json&logoColor=white)
-
-<br>
-
-**`python-visualization/folium`** &nbsp;[#2274](https://github.com/python-visualization/folium/pull/2274) &nbsp;![in review](https://img.shields.io/badge/in_review-1a7f37?style=flat-square)
-
-Upgraded Leaflet 1.9.3 → 1.9.4 at a maintainer's request, repairing a notebook test red on `main`. Leaflet 1.9.3 calls `layer.getElement()` unguarded and throws on any nested `FeatureGroup`; because the failing test skipped `verify_js_logs()`, the uncaught error lingered in the session-scoped driver's console log and surfaced in whichever later test read it first — not the page CI blamed. Reproduced by running the two tests in order; 76 passed, 1 xfailed locally.
-
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![Leaflet](https://img.shields.io/badge/Leaflet%2FJS-199900?style=flat-square&logo=leaflet&logoColor=white) ![pytest](https://img.shields.io/badge/pytest-0A9EDC?style=flat-square&logo=pytest&logoColor=white) ![Selenium](https://img.shields.io/badge/Selenium-43B02A?style=flat-square&logo=selenium&logoColor=white)
-
+| Repository | Contribution |
+| :--- | :--- |
+| **`mdn/browser-compat-data`**<br>[#30171](https://github.com/mdn/browser-compat-data/pull/30171)<br>![merged](https://img.shields.io/badge/merged-8250df?style=flat-square) | **Corrected Firefox compat data for `FontFaceSet` iteration methods.**<br>Tested 11 iteration behaviors across Firefox 153 and Chrome 151 to establish which three subfeatures are broken and which work correctly — a distinction the original report never made.<br><br>![MDN](https://img.shields.io/badge/MDN-000000?style=flat-square&logo=mdnwebdocs&logoColor=white) ![JSON Schema](https://img.shields.io/badge/JSON_Schema-000000?style=flat-square&logo=json&logoColor=white) |
+| **`python-visualization/folium`**<br>[#2263](https://github.com/python-visualization/folium/pull/2263)<br>![merged](https://img.shields.io/badge/merged-8250df?style=flat-square) | **Root-caused a bug open since 2021: GeoJSON tooltips came up empty on multi-geometry features.**<br>The `feature` never reached the child layers Leaflet wraps in a `FeatureGroup` ([issue #1520](https://github.com/python-visualization/folium/issues/1520)). Fix verified against all eight geometry types plus nested `GeometryCollection`s, with a Selenium regression test.<br><br>![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![Selenium](https://img.shields.io/badge/Selenium-43B02A?style=flat-square&logo=selenium&logoColor=white) |
+| **`python-visualization/folium`**<br>[#2274](https://github.com/python-visualization/folium/pull/2274)<br>![merged](https://img.shields.io/badge/merged-8250df?style=flat-square) | **Upgraded Leaflet 1.9.3 → 1.9.4 at a maintainer’s request, repairing a notebook test red on `main`.**<br>Leaflet 1.9.3 calls `layer.getElement()` unguarded and throws on nested `FeatureGroup`s; because the failing test skipped `verify_js_logs()`, the uncaught error lingered in the session-scoped driver log and surfaced in whichever later test read it first — not the page CI blamed.<br><br>![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![Leaflet](https://img.shields.io/badge/Leaflet-199900?style=flat-square&logo=leaflet&logoColor=white) |
+| **`traceroot-ai/traceroot`**<br>[#1968](https://github.com/traceroot-ai/traceroot/pull/1968)<br>![in review](https://img.shields.io/badge/in_review-6e7781?style=flat-square) | **Rewrote the Vercel AI integration docs after proving the documented telemetry hook emits nothing on SDK v7.**<br>The page documented `experimental_telemetry`, which on `ai` 7.x silently produces no spans ([issue #1966](https://github.com/traceroot-ai/traceroot/issues/1966), which I filed). Its own example produced 1 span; changing only that line to `@ai-sdk/otel` produced 5 — including the `chat` and `execute_tool` spans the page’s own table promises.<br><br>![OpenTelemetry](https://img.shields.io/badge/OpenTelemetry-000000?style=flat-square&logo=opentelemetry&logoColor=white) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) |
+| **`jupyterlab/jupyterlab`**<br>[#19257](https://github.com/jupyterlab/jupyterlab/pull/19257)<br>![in review](https://img.shields.io/badge/in_review-6e7781?style=flat-square)<br>![milestone 4.6.x](https://img.shields.io/badge/milestone_4.6.x-informational?style=flat-square) | **Fixed 2.43:1 contrast text in the Debugger Variables panel — open since 2023.**<br>A CodeMirror syntax token was styling UI chrome text below even the 3:1 large-text floor of WCAG SC 1.4.3. Swapping it for an existing `--jp-` theme token brings it to 8.49:1; tracing the background to a `.positioning-region` element inside the `jp-tree-item` shadow root explained why Dark High Contrast never helped.<br><br>![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) ![CSS](https://img.shields.io/badge/CSS-1572B6?style=flat-square&logo=css3&logoColor=white) |
+| **`jupyterlab/jupyterlab`**<br>[#19303](https://github.com/jupyterlab/jupyterlab/pull/19303)<br>![in review](https://img.shields.io/badge/in_review-6e7781?style=flat-square) | **Fixed Alt+W not closing the current tab when focus sat outside the main area — open since 2018, zero comments.**<br>The `application:close` keybinding was scoped to `.jp-Activity`, so it never fired unless focus was in a main-area widget, while File ▸ Close Tab worked from anywhere. A one-line selector change, plus a repro widened past the original report and five scenarios verified against `main`.<br><br>![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) ![JSON Schema](https://img.shields.io/badge/JSON_Schema-000000?style=flat-square&logo=json&logoColor=white) |
 
 <details>
 <summary><b>Also this month</b></summary>
