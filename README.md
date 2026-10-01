@@ -4,7 +4,7 @@
   <img src="assets/header.png" alt="Nina Mir — software engineer // web / data" width="100%" />
 </p>
 
-## <img align="top" width="24" src="https://api.iconify.design/lucide/calendar-days.svg?color=%238957e5" /> &nbsp;Sept/Aug 2026
+## <img align="top" width="24" src="https://api.iconify.design/lucide/calendar-days.svg?color=%238957e5" /> &nbsp;July-Oct 2026
 
 <img src="assets/section-open-source.png" alt="Open-source contributions" width="100%" />
 
